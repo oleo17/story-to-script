@@ -6,6 +6,8 @@
 
 核心设计原则是 **体量先于创作**——进入任何模块之前，先用「事件颗粒数」核定剧本规格，防止 AI 自行注水把 60 秒写成 3 分钟。
 
+> **English?** There's a native English edition built on English speech rates and industry conventions, not a translation: [story-to-script-en](https://github.com/oleo17/story-to-script-en)
+
 **适用于 Claude Code、OpenAI Codex、Cursor、Gemini CLI、GitHub Copilot、WorkBuddy** 等所有支持 Agent Skills 标准的 agent —— 纯 Markdown，无脚本依赖，安装即用。见 [安装](#安装)。
 
 ---
