@@ -1,0 +1,61 @@
+name: Bug 报告
+description: 跳过了某一步、超了预算，或者输出了 skill 说它绝不会输出的东西。
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这里的报告大多是预算失控。数字比描述有用——请把下面几项填清楚，不要只说「写多了」。
+  - type: dropdown
+    id: tool
+    attributes:
+      label: 使用的工具
+      options:
+        - Claude Code
+        - OpenAI Codex
+        - Cursor
+        - Gemini CLI
+        - GitHub Copilot / VS Code
+        - WorkBuddy
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: 模型与版本
+      placeholder: claude-sonnet-4-5 / gpt-5-codex / gemini-3-pro
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: 你当时怎么说的
+      description: 原文粘贴，只删掉与请求无关的部分。
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: 实际发生了什么
+      description: 它读了或跳过了哪些模块，以及产出数字——时长、字数、镜数。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: skill 里规定应该怎样
+      description: 引用具体规则——§0.4、某档上限、颗粒公式、09 里某家族的最小颗粒数。
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我用的 skill 目录是最新版
+          required: true
+        - label: 我读过它本该遵循的那个模块
+          required: false
