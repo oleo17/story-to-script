@@ -1,0 +1,4 @@
+interface:
+  display_name: "story-to-script｜剧本写手"
+  short_description: "V3：先按文本量核定剧本规格，再走剧本、资产、分镜、多模型提示词和后期声音"
+  default_prompt: "使用 story-to-script，从项目开发、剧本写作、资产库、AI 分镜、漫剧打戏、Seedance 2.0/2.5、MiniMax H3 提示词到后期 BGM 和声音设计完整推进。"
